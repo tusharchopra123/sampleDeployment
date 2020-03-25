@@ -5,7 +5,7 @@ function fetchUsers (done) {
     })
 }
 function addUser(name,age,city){
-    $.post('/api/products',{
+    $.post('/api/usera',{
         name: name,
         age: age,
         city: city
