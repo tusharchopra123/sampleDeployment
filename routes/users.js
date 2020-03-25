@@ -21,7 +21,10 @@ route.post('/', (req, res) => {
     // We will create a new user 
 
     User.create({
-        name: req.body.name
+        name: req.body.name,
+        age:  req.body.age,
+        city: req.body.city
+
     }).then((user) => {
         res.status(201).send(user)
     }).catch((err) => {
