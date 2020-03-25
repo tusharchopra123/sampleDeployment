@@ -21,7 +21,7 @@ function createUserCard (user) {
         <div class="user-age">${user.age}</div>
         <div class="row">
             <div class="col m-3 p-3">
-                <b>Rs. ${user.city}</b>
+                ${user.city}
             </div>
         </div>
     </div>`
