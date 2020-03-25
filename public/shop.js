@@ -19,11 +19,7 @@ function createUserCard (user) {
     <div class="col-4 card mx-2 p-4">
         <h4 class="user-name">${user.name}</h4>
         <div class="user-age">${user.age}</div>
-        <div class="row">
-            <div class="col m-3 p-3">
-                ${user.city}
-            </div>
-        </div>
+        <div class="user-city">${user.city}</div>
     </div>`
         )
 }
