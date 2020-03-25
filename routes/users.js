@@ -4,7 +4,6 @@ const route = require('express').Router()
 route.get('/', (req, res) => {
     // We want to send an array of all users
     // From our database here
-
     User.findAll()
         .then((users) => {
             res.status(200).send(users)
