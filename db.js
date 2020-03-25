@@ -36,7 +36,15 @@ const User = db.define('users', {
     name: {
         type: Sequelize.STRING,
         allowNull: false
-    }},{
+    },
+    age : {
+        type: Sequelize.INTEGER
+    },
+    city: {
+        type: Sequelize.STRING
+
+    }
+    },{
 
     }
 )
