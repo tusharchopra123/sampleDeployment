@@ -1,5 +1,5 @@
 
-function fetchUser (done) {
+function fetchUsers (done) {
     $.get('/api/users', function (data) {
         done(data)
     })
