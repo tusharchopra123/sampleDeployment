@@ -1,7 +1,26 @@
+// Created!
+// You have successfully created a new database. The details are below.
+
+// Username: la8B8tCY2W
+
+// Database name: la8B8tCY2W
+
+// Password: ocgU3csP4k
+
+// Server: remotemysql.com
+
+// Port: 3306
+
+// These are the username and password to log in to your database and phpMyAdmin
+
+// Make sure you keep your password secure. Ensure you keep back ups of your database in case it gets deleted.
+
+
 const Sequelize = require('sequelize')
 
-const db = new Sequelize( 'demo', 'b32_25044634', 'Tushar9958@', {
-    host: 'sql305.byethost.com',
+
+const db = new Sequelize( 'la8B8tCY2W', 'la8B8tCY2W', 'ocgU3csP4k', {
+    host: 'remotemysql.com',
     dialect: 'mysql',
     pool: {
         min: 0,
@@ -18,8 +37,11 @@ const User = db.define('users', {
         type: Sequelize.STRING,
         allowNull: false
     }},{
+
     }
 )
+
+
 db
   .authenticate()
   .then(() => {
@@ -28,9 +50,11 @@ db
   .catch(err => {
     console.error('Unable to connect to the database:', err);
   });
+
 db.sync()
     .then(() => console.log("Database has been synced"))
     .catch((err) => console.error(err))
+
 exports = module.exports = {
     User
 }
